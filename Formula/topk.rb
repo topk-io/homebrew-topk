@@ -7,20 +7,20 @@ class Topk < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-aarch64-apple-darwin.tar.gz"
-      sha256 "2ddb2e68882e38baff23246299dfd2d6eaeaf11efa77d0460fc564bb55f0d172"
+      sha256 "e03b6cc906a44edd062674b65785d7f3992b7581de3c04fbda5f60e9ff8b8b7f"
     else
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-x86_64-apple-darwin.tar.gz"
-      sha256 "484fecd713df76481e43a92533e64cea0cc3271db0666a721df3d9c405ce47be"
+      sha256 "a6d2c4df0de2f34a74ae64c99508d3be60ab1bf917f715dbfce69cbdcc52db37"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5e71f7b22a5db90cdbc5cc47ddd53006a2b58b1128a8f44bcc0ccc6ed9982c59"
+      sha256 "02ed7d67d741ab438233270f2c7500776e41611d7698fb9b9527e902fcd35584"
     else
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c085008a15f691ccf1b3f75a088eb85ca83743baff774bc15aadabbda573cfe3"
+      sha256 "3e1d213196dfa57c9a3ccf24a8575ca1ca265464224fabc3512a7b0f72a9c2f3"
     end
   end
 
