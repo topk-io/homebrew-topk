@@ -1,26 +1,26 @@
 class Topk < Formula
   desc "Turn raw files into searchable knowledge"
   homepage "https://topk.io"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-aarch64-apple-darwin.tar.gz"
-      sha256 "fad8180be434ef0ab4cf8102ce497966cc5d346ab5515e2ff6b90e1309ed1857"
+      sha256 "99a5e3794ea1bd1ae52f79ec58d1feb04133c043e37d72df2c5ba91e877c4e3b"
     else
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-x86_64-apple-darwin.tar.gz"
-      sha256 "b7b0000baeac624e6a5b2892479ad4625b1ae2763e76bf89c2e4fa09dd0f2b2e"
+      sha256 "5db32df1b3703f38db0df67f8ddc6927c4168dea68e2ddb10a9bc825aa7d862a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cb1b884b39e9c32abbc2189b7643d60766b2e173a5af291bbd6e9e9d994c82b9"
+      sha256 "a7f000c5bd773c5f77d145fb83cc2c3f6272b1e7e83499b49983bad255430a25"
     else
       url "https://github.com/topk-io/topk/releases/download/cli-v#{version}/topk-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a7206b98295e6c3c9412d211f196c81a496552276d53105236acaa362fc0c5a1"
+      sha256 "89a18472f094ff6871a2c3145061b65d987094aa128ca0db34b144b3d4641d3d"
     end
   end
 
